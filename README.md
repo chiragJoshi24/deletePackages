@@ -17,5 +17,19 @@ local/gst-plugin-gtk4 0.13.2-1
 local/gst-plugin-pipewire 1:1.2.7-1
     Multimedia graph framework - pipewire plugin
 ```
-Paste it in the file **data.txt** // Double check to see all the packages are what you intend to delete.
-Run the script
+Paste it in the file **data.txt** 
+// Double check to see all the packages are what you intend to delete.
+
+Compile the code:
+
+```bash
+g++ main.cpp -o main
+```
+
+Run the program and pipe its output directly into Bash:
+
+```bash
+./main | bash
+```
+
+This will execute the generated commands in the shell without using any intermediate files.
